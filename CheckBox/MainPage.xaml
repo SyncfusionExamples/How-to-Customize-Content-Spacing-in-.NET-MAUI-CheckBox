@@ -1,15 +1,9 @@
-# How-to-Customize-Content-Spacing-in-.NET-MAUI-CheckBox.
-This repository contains a sample explaining how to Customize Content Spacing in .NET MAUI CheckBox
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CheckBox.MainPage"
+             xmlns:syncfusion="clr-namespace:Syncfusion.Maui.Buttons;assembly=Syncfusion.Maui.Buttons">
 
-### ContentSpacing support in .NET MAUI CheckBox
-
-The `ContentSpacing` feature in CheckBox control allows for flexible adjustment of the space between the control's visual element and its associated label text.
-
-The following code example illustrate how to set ContentSpacing in SfCheckBox.
-
-### XAML
-
-```
     <StackLayout Padding="20">
         <syncfusion:SfCheckBox Text="I accept the terms and conditions"
               ContentSpacing="15"
@@ -36,12 +30,5 @@ The following code example illustrate how to set ContentSpacing in SfCheckBox.
               IsChecked="True" 
               HorizontalOptions="Start"/>
     </StackLayout>
-```
 
-### C#
-
-```
-    SfCheckBox  sfCheckBox  = new SfCheckBox();
-    sfCheckBox.Text = "I accept the terms and conditions";
-    sfCheckBox.ContentSpacing = 25;
-```
+</ContentPage>
