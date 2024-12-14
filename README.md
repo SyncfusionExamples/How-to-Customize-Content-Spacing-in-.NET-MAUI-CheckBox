@@ -10,14 +10,38 @@ The following code example illustrate how to set ContentSpacing in SfCheckBox.
 ### XAML
 
 ```
-    <syncfusion:SfCheckBox Text="Check Box" ContentSpacing="25"/>
+    <StackLayout Padding="20">
+        <syncfusion:SfCheckBox Text="I accept the terms and conditions"
+              ContentSpacing="15"
+              IsChecked="True" 
+              HorizontalOptions="Start"/>
 
+        <syncfusion:SfCheckBox Text="Subscribe to newsletter"
+              ContentSpacing="15"
+              IsChecked="False" 
+              HorizontalOptions="Start"/>
+
+        <syncfusion:SfCheckBox Text="Enable email notifications"
+              ContentSpacing="15" 
+              IsChecked="True" 
+              HorizontalOptions="Start"/>
+
+        <syncfusion:SfCheckBox Text="Remember me on this device"
+              ContentSpacing="15" 
+              IsChecked="False" 
+              HorizontalOptions="Start"/>
+
+        <syncfusion:SfCheckBox Text="Allow location access"
+              ContentSpacing="15" 
+              IsChecked="True" 
+              HorizontalOptions="Start"/>
+    </StackLayout>
 ```
 
 ### C#
 
 ```
     SfCheckBox  sfCheckBox  = new SfCheckBox();
-    sfCheckBox.Text = "Check Box";
+    sfCheckBox.Text = "I accept the terms and conditions";
     sfCheckBox.ContentSpacing = 25;
 ```
